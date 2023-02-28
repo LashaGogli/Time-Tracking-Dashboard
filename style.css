@@ -10,14 +10,14 @@
 .insidecontainer{
     width: 80%;
     height: 518px;
-    background-color: white;
+    background-color: #0E1323;
     display: grid;
     gap: 20px 20px;
     grid-template-columns: auto auto auto auto;
 }
 .grfiDivs{
   
-    background-color: black;
+    background-color: #0E1323;
     
 }
 #firstDiv{
@@ -48,12 +48,82 @@
 }
 .downOrangeDiv{
     width: 100%;
-    height: 70%;
-    background-color: red;
+    height: 80%;
+    background-color: #1C204B;
     top: 100%;
-    transform: translate(0,-25px);
+    transform: translate(0,-50px);
     border-radius: 15px;
     
     
     
+}
+.skyDiv{
+    width: 100%;
+    height: 40%;
+    background-color: #55C2E6;
+    border-radius: 15px;
+}
+.downskyDiv{
+    width: 100%;
+    height: 80%;
+    background-color: #1C204B;
+    top: 100%;
+    transform: translate(0,-50px);
+    border-radius: 15px;
+}
+.pinkDiv{
+    width: 100%;
+    height: 40%;
+    background-color: #FF5E7D;
+    border-radius: 15px;
+}
+.downpinkDiv{
+    width: 100%;
+    height: 80%;
+    background-color: #1C204B;
+    top: 100%;
+    transform: translate(0,-50px);
+    border-radius: 15px;
+}
+.greenDiv{
+    width: 100%;
+    height: 40%;
+    background-color: #4BCF82;
+    border-radius: 15px;
+}
+.downgreenDiv{
+    width: 100%;
+    height: 80%;
+    background-color: #1C204B;
+    top: 100%;
+    transform: translate(0,-50px);
+    border-radius: 15px;
+}
+.violetDiv{
+    width: 100%;
+    height: 40%;
+    background-color: #7335D2;
+    border-radius: 15px;
+}
+.downvioletDiv{
+    width: 100%;
+    height: 80%;
+    background-color: #1C204B;
+    top: 100%;
+    transform: translate(0,-50px);
+    border-radius: 15px;
+}
+.yellowDiv{
+    width: 100%;
+    height: 40%;
+    background-color: #F1C75B;
+    border-radius: 15px;
+}
+.downyellowDiv{
+    width: 100%;
+    height: 80%;
+    background-color: #1C204B;
+    top: 100%;
+    transform: translate(0,-50px);
+    border-radius: 15px;
 }
