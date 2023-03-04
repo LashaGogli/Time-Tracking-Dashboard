@@ -247,7 +247,8 @@
     color: #7078C9;
     margin-left: 32px;
 }
-.weekly{
+
+.weekly {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -256,7 +257,8 @@
     color: white;
     margin-left: 32px;
 }
-.monthly{
+
+.monthly {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -265,26 +267,58 @@
     color: #7078C9;
     margin-left: 32px;
 }
-.transparetndiv{
+
+.transparetndiv {
     width: 80%;
     height: 30px;
-    background-color: white;
-    margin: 0 auto;
-}
-.hourdiv{
-    width: 80%;
-    height: 70px;
-    background-color: white;
-    margin: 0 auto;
-    
-}
-.previous{
-    width: 80%;
-    height: 30px;
-    background-color: white;
     margin: 0 auto;
 }
 
+.hourdiv {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+
+}
+
+.previous {
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.tytle {
+    position: absolute;
+    height: 21px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.current {
+    position: absolute;
+    height: 66px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    color: #FFFFFF;
+}
+
+.previousP {
+    position: absolute;
+    height: 18px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BBC0FF;
+}
 
 @media(max-width:376px) {
     .container {

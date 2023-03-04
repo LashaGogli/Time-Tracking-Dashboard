@@ -104,10 +104,28 @@ let somedata = [
 ]
 
 let transparetndivs = document.querySelectorAll(".transparetndiv");
-console.log(transparetndivs);
+let hourdiv = document.querySelectorAll(".hourdiv");
+let previous = document.querySelectorAll(".previous");
+
 
 transparetndivs.forEach((div, i) => {
+  let tytleP = document.createElement("p");
+  tytleP.classList.add("tytle");
+  tytleP.textContent = somedata[i].title;
+  div.appendChild(tytleP);
+});
+
+hourdiv.forEach((div, i) => {
   let someP = document.createElement("p");
-  someP.textContent = somedata[i].title;
+  someP.classList.add("current");
+  someP.textContent = somedata[i].timeframes.weekly.current+"hrs";
+  div.appendChild(someP);
+});
+
+previous.forEach((div, i) => {
+  let someP = document.createElement("p");
+  someP.classList.add("previousP");
+  someP.style.position="absolute";
+  someP.textContent = somedata[i].timeframes.weekly.previous+"hrs";
   div.appendChild(someP);
 });
