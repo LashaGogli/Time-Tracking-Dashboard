@@ -471,5 +471,11 @@
     .dots{
         top:23%;
     }
+    .downbluediv{
+        flex-direction: row;
+        align-items: end;
+        padding-bottom: 10px;
+        padding-right: 25px;
+    }
 
 }
