@@ -109,7 +109,7 @@ let previous = document.querySelectorAll(".previous");
 
 
 transparetndivs.forEach((div, i) => {
- 
+
   let tytleP = document.createElement("p");
   tytleP.classList.add("tytle");
   tytleP.textContent = somedata[i].title;
@@ -135,3 +135,108 @@ previous.forEach((div, i) => {
   someP.textContent = "Last week - " + somedata[i].timeframes.weekly.previous + "hrs";
   div.appendChild(someP);
 });
+
+
+let daily = document.querySelector(".daily");
+let monthly = document.querySelector(".monthly");
+let weekly = document.querySelector(".weekly");
+
+daily.addEventListener("click", function () {
+
+
+  daily.style.color = "white";
+  weekly.style.color = "#7078C9";
+  monthly.style.color = "#7078C9";
+
+  hourdiv.forEach((div, i) => {
+    div.innerHTML = "";
+    let someP = document.createElement("p");
+    someP.classList.add("current");
+    someP.textContent = somedata[i].timeframes.daily.current + "hrs";
+    div.appendChild(someP);
+
+  });
+  previous.forEach((div, i) => {
+    div.innerHTML = "";
+    let someP = document.createElement("p");
+    someP.classList.add("previousP");
+    someP.style.position = "absolute";
+    someP.textContent = "Last day - " + somedata[i].timeframes.daily.previous + "hrs";
+    div.appendChild(someP);
+  });
+
+})
+
+monthly.addEventListener("click", function () {
+  daily.style.color = "#7078C9";
+  weekly.style.color = "#7078C9";
+  monthly.style.color = "white";
+
+  hourdiv.forEach((div, i) => {
+    div.innerHTML = "";
+    let someP = document.createElement("p");
+    someP.classList.add("current");
+    someP.textContent = somedata[i].timeframes.monthly.current + "hrs";
+    div.appendChild(someP);
+
+  });
+  previous.forEach((div, i) => {
+    div.innerHTML = "";
+    let someP = document.createElement("p");
+    someP.classList.add("previousP");
+    someP.style.position = "absolute";
+    someP.textContent = "Last month - " + somedata[i].timeframes.monthly.previous + "hrs";
+    div.appendChild(someP);
+  });
+
+})
+
+weekly.addEventListener("click", function () {
+  daily.style.color = "#7078C9";
+  weekly.style.color = "white";
+  monthly.style.color = "#7078C9";
+  
+
+  hourdiv.forEach((div, i) => {
+    div.innerHTML = "";
+    let someP = document.createElement("p");
+    someP.classList.add("current");
+    someP.textContent = somedata[i].timeframes.weekly.current + "hrs";
+    div.appendChild(someP);
+
+  });
+  previous.forEach((div, i) => {
+    div.innerHTML = "";
+    let someP = document.createElement("p");
+    someP.classList.add("previousP");
+    someP.style.position = "absolute";
+    someP.textContent = "Last week - " + somedata[i].timeframes.weekly.previous + "hrs";
+    div.appendChild(someP);
+  });
+
+})
+
+// weekly.addEventListener("mousemove", function () {
+//   weekly.style.color = "white";
+
+// })
+// daily.addEventListener("mousemove", function () {
+//   daily.style.color = "white";
+
+// })
+// monthly.addEventListener("mousemove", function () {
+//   monthly.style.color = "white";
+
+// })
+// weekly.addEventListener("mouseleave", function () {
+//   weekly.style.color =  "#7078C9";
+
+// })
+// daily.addEventListener("mouseleave", function () {
+//   daily.style.color =  "#7078C9";
+
+// })
+// monthly.addEventListener("mouseleave", function () {
+//   monthly.style.color = "#7078C9";
+
+// })

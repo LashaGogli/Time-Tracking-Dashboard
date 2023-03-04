@@ -322,11 +322,28 @@
     line-height: 18px;
     color: #BBC0FF;
 }
-.dots{
-    position : absolute;
-    left : 84%;
-    top : 10%;
+
+.dots {
+    position: absolute;
+    left: 84%;
+    top: 10%;
 }
+
+.daily:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.monthly:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.weekly:hover {
+    color: white;
+    cursor: pointer;
+}
+
 
 @media(max-width:376px) {
     .container {
@@ -468,10 +485,12 @@
     .transparetndiv {
         padding-top: 20px;
     }
-    .dots{
-        top:23%;
+
+    .dots {
+        top: 23%;
     }
-    .downbluediv{
+
+    .downbluediv {
         flex-direction: row;
         align-items: end;
         padding-bottom: 10px;
