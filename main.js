@@ -109,23 +109,29 @@ let previous = document.querySelectorAll(".previous");
 
 
 transparetndivs.forEach((div, i) => {
+ 
   let tytleP = document.createElement("p");
   tytleP.classList.add("tytle");
   tytleP.textContent = somedata[i].title;
   div.appendChild(tytleP);
+  let img = document.createElement('img');
+  img.classList.add("dots");
+  img.src = '3dots.svg';
+  div.appendChild(img);
+
 });
 
 hourdiv.forEach((div, i) => {
   let someP = document.createElement("p");
   someP.classList.add("current");
-  someP.textContent = somedata[i].timeframes.weekly.current+"hrs";
+  someP.textContent = somedata[i].timeframes.weekly.current + "hrs";
   div.appendChild(someP);
 });
 
 previous.forEach((div, i) => {
   let someP = document.createElement("p");
   someP.classList.add("previousP");
-  someP.style.position="absolute";
-  someP.textContent = somedata[i].timeframes.weekly.previous+"hrs";
+  someP.style.position = "absolute";
+  someP.textContent = "Last week - " + somedata[i].timeframes.weekly.previous + "hrs";
   div.appendChild(someP);
 });
